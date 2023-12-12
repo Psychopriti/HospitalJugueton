@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+👨‍⚕️Hospital Jugueton: Agarres 
+{% endblock %}
+
+{% block main %}
+<h1>Stats Hospital Agarres  </h1>
+<br>
+<nav class="navbar">
+    <div class="navbar-left">
+        <a class="navbar-brand" href="/pregame">
+            <img src="/static/logo.png" alt="Logo" class="logo-image">
+        </a>
+    </div>
+    <div class="navbar-right">
+        <a class="navbar-option" href="/logout">👋Cerrar Sesion</a>
+    </div>
+</nav>
+<table class = "">
+    <thead>
+        <tr>
+            <th>Doctor</th>
+            <th>Agarres</th>
+        <tr>
+    </thead>
+    <tbody>
+            <tr>
+                {%for i in agarres_list%}
+                <td>{{i.name.capitalize()}}</td>
+                <td>{{i.agarres}}</td>
+            </tr>
+            {%endfor%}
+    </tbody>
+</table>
+{% endblock %}

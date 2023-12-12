@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block js %}
+    <script src="/static/lol.js"></script>
+
+
+{% endblock %}
+
+{% block title %}
+👨‍⚕️Hospital Jugueton: Update Bodies 
+{% endblock %}
+
+
+{% block main %}
+<nav class="navbar">
+    <div class="navbar-left">
+        <a class="navbar-brand" href="/pregame">
+            <img src="/static/logo.png" alt="Logo" class="logo-image">
+        </a>
+    </div>
+    <div class="navbar-right">
+        <a class="navbar-option" href="/logout">👋Cerrar Sesion</a>
+    </div>
+</nav>
+    <h1>Introduce la cantidad que quieres añadir</h1>
+    <br>
+    <form action="#" method="post">
+        <input class="form-control" type="number" id="numberInput" name="number" step="1" required autofocus>
+        <button class = "btn" type="submit">Update</button>
+    </form>
+    {% endblock %}

@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block js %}
+    <script src="/static/lol.js"></script>
+
+
+{% endblock %}
+
+{% block title %}
+👨‍⚕️Hospital Jugueton: MainPage 
+{% endblock %}
+
+
+{% block main %}
+<nav class="navbar">
+    <div class="navbar-left">
+        <a class="navbar-brand" href="/pregame">
+            <img src="/static/logo.png" alt="Logo" class="logo-image">
+        </a>
+    </div>
+    <div class="navbar-right">
+        <a class="navbar-option" href="/logout">👋Cerrar Sesion</a>
+    </div>
+</nav>
+    <h1>Hola {{alias}}, que quieres hacer?</h1>
+    <br>
+    <a href="/verstats" class="btn">Ver mis stats</a>
+    <a href="/updatestats" class="btn">Actualizar stats</a>
+    <a href="/hospitalstats" class="btn">Ver stats del hospital</a>
+
+
+{% endblock %}
+

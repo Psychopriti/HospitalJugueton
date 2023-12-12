@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block js %}
+    <script src="/static/lol.js"></script>
+
+
+{% endblock %}
+
+{% block title %}
+👨‍⚕️Hospital Jugueton: Update 
+{% endblock %}
+
+
+{% block main %}
+<nav class="navbar">
+    <div class="navbar-left">
+        <a class="navbar-brand" href="/pregame">
+            <img src="/static/logo.png" alt="Logo" class="logo-image">
+        </a>
+    </div>
+    <div class="navbar-right">
+        <a class="navbar-option" href="/logout">👋Cerrar Sesion</a>
+    </div>
+</nav>
+    <h1>Hola {{alias}}, que quieres actualizar?</h1>
+    <br>
+    <a href="/updateagarres" class="btn">Agarres</a>
+    <a href="/updatebodies" class="btn">Bodies</a>
+
+
+{% endblock %}

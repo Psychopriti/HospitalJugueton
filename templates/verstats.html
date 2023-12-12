@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    👨‍💻CodeTyper: Profile
+{% endblock %}
+
+{% block main %}
+<h1>Stats Personales </h1>
+<h1>{{alias}}</h1>
+<br>
+<nav class="navbar">
+    <div class="navbar-left">
+        <a class="navbar-brand" href="/pregame">
+            <img src="/static/logo.png" alt="Logo" class="logo-image">
+        </a>
+    </div>
+    <div class="navbar-right">
+        <a class="navbar-option" href="/logout">👋Cerrar Sesion</a>
+    </div>
+</nav>
+<table class = "">
+    <thead>
+        <tr>
+            <th>Agarres</th>
+            <th>BodyCount</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{agarres}}</td>
+            <td>{{bodycount}}</td>
+        </tr>
+    </tbody>
+</table>
+{% endblock %}
